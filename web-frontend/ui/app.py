@@ -1,6 +1,11 @@
 import os
 from datetime import datetime
 
+import subprocess
+
+subprocess.check_call(['pip', 'install', '--upgrade', 'jinja2'])
+
+
 from flask import Flask, redirect, render_template, request, url_for
 from model import initialize_index
 
