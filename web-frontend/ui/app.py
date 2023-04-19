@@ -8,6 +8,7 @@ subprocess.check_call(['pip', 'install', 'jinja2==2.11.3'])
 
 
 from flask import Flask, redirect, render_template, request, url_for
+import streamlit as st
 from model import initialize_index
 
 app = Flask(__name__)
