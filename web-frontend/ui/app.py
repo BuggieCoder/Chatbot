@@ -3,7 +3,8 @@ from datetime import datetime
 
 import subprocess
 
-subprocess.check_call(['pip', 'install', '--upgrade', 'jinja2'])
+# Upgrade Jinja2 package to a specific version
+subprocess.check_call(['pip', 'install', 'jinja2==2.11.3'])
 
 
 from flask import Flask, redirect, render_template, request, url_for
